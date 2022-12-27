@@ -60,6 +60,10 @@ img {
     max-width: 100%;
 }
 
+.img1 {
+    max-width: 70%;
+}
+
 h1,
 h2,
 h3,
@@ -103,6 +107,7 @@ blockquote {
     margin: 0;
     padding: 0;
 }
+
 
 /* 1.1 Spacing
    ===================================
@@ -195,6 +200,10 @@ h6 {
 /* 1.3 hover and focus effect
    ===================================
 */
+.modal-open {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 /* this code is for hover */
 .footer_top .widget ul li a:hover {
     color: #fdc236;
