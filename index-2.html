@@ -177,7 +177,8 @@
                                         Great way to get success <br> in Financial service
                                     </h3>
                                     <div class="hero_btn_wrapper" data-animation="animated zoomInUp">
-                                        <button class="hero_area_btn" onclick="window.location.href = 'contact-2.html';">
+                                        <button class="hero_area_btn"
+                                            onclick="window.location.href = 'contact-2.html';">
                                             Enquiry Now
                                         </button>
                                     </div>
@@ -203,7 +204,8 @@
                                         your core business.
                                     </h3>
                                     <div class="hero_btn_wrapper" data-animation="animated zoomInRight">
-                                        <button class="hero_area_btn" onclick="window.location.href = 'contact-2.html';">
+                                        <button class="hero_area_btn"
+                                            onclick="window.location.href = 'contact-2.html';">
                                             Free consultation
                                         </button>
                                     </div>
@@ -228,7 +230,8 @@
                                         analytics.
                                     </h3>
                                     <div class="hero_btn_wrapper" data-animation="animated lightSpeedIn">
-                                        <button class="hero_area_btn" onclick="window.location.href = 'contact-2.html';">
+                                        <button class="hero_area_btn"
+                                            onclick="window.location.href = 'contact-2.html';">
                                             Contact Us
                                         </button>
                                     </div>
@@ -1091,22 +1094,22 @@
                     </h2>
 
                     <div class="form-conteniar">
-                        <form>
+                        <form action="">
                             <div class="input-name">
                                 <i class="fa fa-user lock"></i>
-                                <input type="text" placeholder="First Name" class="name">
+                                <input type="text" placeholder="First Name" class="name" id="name">
                                 <span class="last">
                                     <i class="fa fa-user lock"></i>
-                                    <input type="text" placeholder="Last Name" class="name">
+                                    <input type="text" placeholder="Last Name" class="name" id="lname">
                                 </span>
                             </div>
                             <div class="input-name">
                                 <i class="fa fa-phone email"></i>
-                                <input type="text" placeholder="Mobile" required class="text-name">
+                                <input type="text" placeholder="Mobile" required class="text-name" id="phone">
                             </div>
                             <div class="input-name">
                                 <i class="fa fa-envelope email"></i>
-                                <input type="email" placeholder="Email" required class="text-name">
+                                <input type="email" placeholder="Email" required class="text-name" id="mailid">
                             </div>
                             <!-- <div class="input-name">
                                 <i class="fa fa-lock lock"></i>
@@ -1117,7 +1120,7 @@
                                 <input type="password" placeholder="Re-type Password" class="text-name">
                             </div> -->
                             <div class="input-name">
-                                <select class="country">
+                                <select class="country" id="invest">
                                     <option>Investment</option>
                                     <option>Below Rs.50,000</option>
                                     <option>1 Lac- 2 Lac</option>
@@ -1139,7 +1142,7 @@
                                 </div>
                             </div> -->
                             <div class="input-name">
-                                <select class="country">
+                                <select class="country" id="seg">
                                     <option>Segment</option>
                                     <option>Basic Stock Option</option>
                                     <option>Basic Future</option>
@@ -1155,7 +1158,7 @@
                             </div>
 
                             <div class="input-name">
-                                <input class="button" type="submit" value="Submit" />
+                                <input class="button" onclick="whatsapp()" type="submit" value="Submit" />
                             </div>
                         </form>
                     </div>
@@ -1277,6 +1280,29 @@
         ================================================-->
 
     <!-- jquery necessary for all plug in -->
+    <script>
+        function whatsapp() {
+            var first_name = document.getElementById("name").value;
+            var last_name = document.getElementById("lname").value;
+            var total = first_name + " " + last_name;
+            var mobile = document.getElementById("phone").value;
+            var email = document.getElementById("mailid").value;
+            var investment = document.getElementById("invest").value;
+            var segment = document.getElementById("seg").value;
+
+            var whatsappurl = "https://wa.me/918433551149?text="
+                + "Enquiry For Boostock-Info" + "%0a"
+
+                + "Name Of Customer : " + total + "%0a"
+                + "Mobile : " + mobile + "%0a"
+                + "Email : " + email + "%0a"
+                + "Investment : " + investment + "%0a"
+                + "Segment : " + segment + "%0a"
+
+                + "We will Contact you ...." + "%0a"
+            window.open(whatsappurl, "_blank").focus();
+        }
+    </script>
     <script type="text/javascript">
 
         setTimeout(function () {
