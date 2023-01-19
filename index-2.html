@@ -19,19 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- fevicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/fevicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/fevicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/fevicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/fevicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/fevicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/fevicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/fevicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/fevicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/fevicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/fevicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/fevicon/fevicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/fevicon/fevicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/fevicon/fevicon-16x16.png">
+    <link rel="shortcut icon" sizes="392x392" href="img/boostock-info 1-04.svg" />
 
 
     <!--================================================
@@ -1094,33 +1082,27 @@
                     </h2>
 
                     <div class="form-conteniar">
-                        <form action="">
+                        <form action="https://formsubmit.co/boostockInfo@gmail.com" method="POST">
                             <div class="input-name">
                                 <i class="fa fa-user lock"></i>
-                                <input type="text" placeholder="First Name" class="name" id="name">
+                                <input type="text" placeholder="First Name" class="name" id="name" name="first_name">
                                 <span class="last">
                                     <i class="fa fa-user lock"></i>
-                                    <input type="text" placeholder="Last Name" class="name" id="lname">
+                                    <input type="text" placeholder="Last Name" class="name" id="lname" name="last_name">
                                 </span>
                             </div>
                             <div class="input-name">
                                 <i class="fa fa-phone email"></i>
-                                <input type="text" placeholder="Mobile" required class="text-name" id="phone">
+                                <input type="text" placeholder="Mobile" required class="text-name" id="phone"
+                                    name="phone">
                             </div>
                             <div class="input-name">
                                 <i class="fa fa-envelope email"></i>
-                                <input type="email" placeholder="Email" required class="text-name" id="mailid">
-                            </div>
-                            <!-- <div class="input-name">
-                                <i class="fa fa-lock lock"></i>
-                                <input type="password" placeholder="Password" class="text-name">
+                                <input type="email" placeholder="Email" required class="text-name" id="mailid"
+                                    name="mail">
                             </div>
                             <div class="input-name">
-                                <i class="fa fa-lock lock"></i>
-                                <input type="password" placeholder="Re-type Password" class="text-name">
-                            </div> -->
-                            <div class="input-name">
-                                <select class="country" id="invest">
+                                <select class="country" id="invest" name="investment">
                                     <option>Investment</option>
                                     <option>Below Rs.50,000</option>
                                     <option>1 Lac- 2 Lac</option>
@@ -1130,19 +1112,9 @@
                                 <div class="arrow">
                                 </div>
                             </div>
-                            <!-- <div class="input-name">
-                                <select class="country">
-                                    <option>Select a country</option>
-                                    <option>India</option>
-                                    <option>United States</option>
-                                    <option>Pakistan</option>
-                                    <option>Australia</option>
-                                </select>
-                                <div class="arrow">
-                                </div>
-                            </div> -->
+
                             <div class="input-name">
-                                <select class="country" id="seg">
+                                <select class="country" id="seg" name="segment">
                                     <option>Segment</option>
                                     <option>Basic Stock Option</option>
                                     <option>Basic Future</option>
@@ -1158,7 +1130,7 @@
                             </div>
 
                             <div class="input-name">
-                                <input class="button" onclick="whatsapp()" type="submit" value="Submit" />
+                                <input class="button" type="submit" value="Submit" />
                             </div>
                         </form>
                     </div>
