@@ -27,7 +27,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- fevicon -->
-    <link rel="shortcut icon" sizes="392x392" href="img/fevicon/Boostock-01.jpg" />
+   <link rel="shortcut icon" sizes="392x392" href="img/title/favicon.png" />
 
 
     <!--================================================
@@ -69,6 +69,32 @@
 </head>
 
 <body>
+    <style>
+        /* For desktop devices */
+        .desktop-image {
+            display: block;
+            /* Show the image by default */
+        }
+
+        /* For mobile devices */
+        @media only screen and (max-width: 480px) {
+            .desktop-image {
+                display: none;
+                /* Hide the desktop image on mobile devices */
+            }
+
+            .mobile-image {
+                display: block;
+                /* Show the mobile image on mobile devices */
+            }
+        }
+
+        @media (min-width: 1000px) {
+            .name-w {
+                display: none;
+            }
+        }
+    </style>
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -86,8 +112,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-2">
-                        <div class="logo">
-                            <a href="index-2.html"><img src="img/boostock-info 1-03.svg" alt="financy"></a>
+
+                        <div class="logo desktop-image">
+                            <a href="index-2.html"><img height="30%" width="50%" src="img/title/Boostock-Info-Head.png"
+                                    alt="boostock">
+                            </a>
+                        </div>
+                        <div class="logo name-w">
+                            <a href="index-2.html"><img height="70px" src="img/title/Boostock-Info-Head.png"
+                                    alt="boostock">
+                            </a>
                         </div>
                     </div> <!-- col-md-3 end -->
 
@@ -287,8 +321,12 @@
                     <div class="row">
                         <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
                             <div class="widget widget_para">
-                                <div class="widget_footer_logo">
-                                    <a href="index-2.html"> <img src="img/footer.png" alt="footer_logo"> </a>
+                                <div class="widget_footer_logo desktop-image">
+                                    <a href="index-2.html"> <img src="img/title/footer.png" alt="footer_logo"> </a>
+                                </div>
+                                <div class="widget_footer_logo name-w">
+                                    <a href="index-2.html"> <img src="img/title/footer.png" width="30%"
+                                            alt="footer_logo"> </a>
                                 </div>
 
                                 <div class="widget_footer_social">
